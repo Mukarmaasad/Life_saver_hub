@@ -1,0 +1,238 @@
+@charset "UTF-8";
+body {
+    padding-top: 0px; /* adjust to match your header height */
+}
+
+.navbar{
+	background:crimson;
+	font-family:calibri;
+	padding-right:1280px;
+	padding-left:0px;
+	width:px;
+	height-bottom:10px;
+	object-position:left top;
+	position:fixed;
+	z-index: 1000;
+	 background: crimson;
+}
+
+.navdiv{
+	display:flex;
+	algin-items:left;
+	justify-content:space-between;  
+	position:fixed;
+}
+
+.header{
+    z-index: 1000;
+    position:fixed;
+	width:100%;
+	background:#341539;
+	
+}
+h1{
+	font-size:35px;
+	color: white;
+}
+/* footer{
+	position:fixed;
+		height:10px;
+	bottom:0;
+	left:0;
+	width:100%;
+	padding:20px 9px;
+	background:#341539;
+	box-shadow: 5px 20px 50px black;
+	color: white;
+	
+} */
+header nav {
+  position: absolute;
+  right: 20px;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+header nav ul li {
+  display: inline-block;
+    transform: scale(1.05); /* Slight scaling effect on hover */
+  
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 6px 15px;
+  border-radius: 30px; /* Rounded navigation buttons */
+  transition: background 0.3s ease, transform 0.3s ease;
+  
+}
+header nav ul li a:hover {
+  background:#D1C4E9;
+	
+	transform: scale(1.05); /* Slight scaling effect on hover */
+    border-radius: 30px; /* Rounded navigation buttons */
+}
+.logo{
+	width: 50px;
+	height: 50px;
+	margin-right:15px;
+	border-radius: 50%;
+	space-between:50%;
+	
+}
+.header-content{
+	display: flex;
+	space-between:50%;
+	align-items:center;
+	
+}.dropdown {
+    position: relative;
+}
+
+.dropdown .dropbtn {
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 30px;
+    background-color:#341539;
+    border: none;
+    cursor: pointer;
+    margin-right:50px;
+}
+
+.dropdown:hover .dropbtn {
+    background-color:#341539;
+    ;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #341539;
+    min-width: 100px;
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-weight: normal;
+}
+
+.dropdown-content a:hover {
+    background-color:red;
+    
+}
+img{
+	width: 50px;
+	height: 25px;
+	color:white;
+}
+
+  .nav-tabs .nav-link {
+    color: white !important;
+  }
+
+  .nav-tabs .nav-link.active {
+    background-color: red; /* optional: active tab bg */
+    color: white !important;
+  }
+
+  .nav-tabs .dropdown-menu .dropdown-item {
+    color: Black !important;
+  }
+ .dropdown-menu .dropdown-item.active {
+    color: red !important;
+    background-color: transparent !important; /* optional: keep bg clean */
+    font-weight: bold; /* optional: make it pop */
+  }
+  .nav-tabs {
+    border-bottom: none !important;
+  }
+  /* Responsive adjustments */
+@media (max-width: 768px) {
+  .header {
+    padding: 10px 10px;  /* Reduce padding to prevent excess space */
+    font-size: 16px; /* Scale font size down */
+  }
+
+  .header-content {
+    flex-direction: column;
+    align-items: flex-center;
+    padding: 10px 0;  /* Padding adjustments for smaller screens */
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 1.5rem; /* Smaller font for better fit */
+    margin-top: 5px;  /* Reduce margin */
+    text-align: left;
+  }
+
+  /* Adjust logo size for small screens */
+  .logo {
+    width: 40px;  /* Reduce logo size */
+    height: 40px; /* Adjust height */
+    margin-right: 10px; /* Slight margin between logo and title */
+  }
+
+  /* Adjust the nav bar for smaller screens */
+  header nav {
+    position: static;
+    width: 100%;
+    margin-top: 0px;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 0;
+  }
+
+  header nav ul li {
+    display: block;
+    width: 100%;
+  }
+
+  /* Modify the logout button for mobile screens */
+  .btn-purple {
+    width: 100%;
+    margin-top: 10px;
+  }
+/* 
+  footer {
+    padding: 10px 20px;  Reduce padding for footer
+  } */
+
+  /* Ensure dropdown works well on small screens */
+  .dropdown .dropbtn {
+    padding: 8px 12px;  /* Adjust padding to fit better */
+  }
+
+  .dropdown-content {
+    position: static;
+    min-width: 100%;
+  }
+
+  /* Remove unnecessary margins and ensure proper scaling */
+  .dropdown-content a {
+    padding: 10px 15px;
+  }
+}
+
+  
